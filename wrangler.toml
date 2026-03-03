@@ -3,12 +3,14 @@ type = "javascript"
 compatibility_date = "2024-01-01"
 
 # Cloudflare Pages configuration
-# DO NOT use 'npx wrangler deploy' - Pages handles deployment automatically
-# Leave deploy command EMPTY in Cloudflare Pages settings
+# Pages auto-deploys from build output directory
 
 [build]
 command = "npm run build"
 cwd = "./"
+
+# IMPORTANT: Tell wrangler where Pages build outputs are
+pages_build_output_dir = ".svelte-kit/cloudflare"
 
 # For Pages Functions (SSR via adapter-cloudflare)
 [build.upload]
