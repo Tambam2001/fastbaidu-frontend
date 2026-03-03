@@ -1,0 +1,10 @@
+{
+	"/": [],
+	"/dashboard": [],
+	"/payment/purchase": [],
+	"/payment/[id]": [],
+	"/task/[id]": [
+		"src/routes/task/[id]/+page.ts"
+	],
+	"/topup": []
+}
